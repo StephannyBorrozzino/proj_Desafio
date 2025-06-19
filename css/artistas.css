@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root {
+    --corprincipal: #012677;
+    --corcomplementarP: #021132;
+    --corcomplementar: #B975E1;
+    --corcomplementar2: #DB8136;
+    --fontdestaque: "Oswald", sans-serif;
+    --fontbase: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(228, 227, 227);
+}
+
+
+/* cabeçario */
+
+header {
+    background-image: radial-gradient(var(--corprincipal), var(--corcomplementarP));
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 3em;
+    font-family: var(--fontdestaque);
+    color: var(--corcomplementar2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
+}
+
+
+/* menu */
+
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    font-size: 1.5em;
+    font-family: var(--fontbase);
+    text-decoration: none;
+    padding: 10px;
+    color: var(--corcomplementar);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--corcomplementarP);
+    color: var(--corcomplementar2);
+}
+
+
+/* main */
+
+main {
+    font-family: var(--fontbase);
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    color: var(--corcomplementar);
+    margin: 10px 20px;
+    font-size: 1.7em;
+}
+
+main p {
+    padding: 20px;
+}
+
+main .row {
+    display: flex;
+    flex-direction: row;
+}
+
+main img {
+    max-width: 600px;
+    margin: 20px;
+    width: 100%;
+}
+
+main strong {
+    color: var(--corcomplementar2);
+}
+
+
+/* introdução */
+
+section#introducaoArts {
+    margin: 30px 40px;
+}
+
+section#introducaoArts p {
+    max-width: 800px;
+}
+
+section#introducaoArts img {
+    border-radius: 40px;
+}
+
+
+/* artistas */
+
+section#recomendacoes {
+    margin: 20px 40px;
+}
+
+section#recomendacoes #container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 50px;
+    margin: 30px 70px;
+}
+
+.artistas {
+    background-color: var(--corprincipal);
+    max-width: 400px;
+    padding: 30px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.artistas img {
+    max-width: 350px;
+}
+
+.artistas h3 {
+    color: var(--corcomplementar);
+    margin: 10px 20px;
+}
+
+.artistas p {
+    color: antiquewhite;
+    margin: 10px;
+    max-width: 400px;
+}
+
+
+/* footer */
+
+footer {
+    padding: 30px;
+    background-color: var(--corcomplementarP);
+    color: antiquewhite;
+    font-family: var(--fontbase);
+    font-size: 1.2em;
+}
+
+
+/* respónsividade */
+
+@media (max-width: 600px) {
+    section#introducaoArts {
+        margin: 30px 30px;
+    }
+    section#introducaoArts img {
+        margin: 5px;
+    }
+    section#recomendacoes #container {
+        gap: 20px 20px;
+        margin: 20px 10px;
+    }
+    .artistas {
+        padding: 10px;
+    }
+    .artistas img {
+        max-width: 250px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    main .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

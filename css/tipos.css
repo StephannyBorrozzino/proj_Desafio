@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root {
+    --corprincipal: #012677;
+    --corcomplementarP: #021132;
+    --corcomplementar: #B975E1;
+    --corcomplementar2: #DB8136;
+    --fontdestaque: "Oswald", sans-serif;
+    --fontbase: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(228, 227, 227);
+}
+
+
+/* cabeçario */
+
+header {
+    background-image: radial-gradient(var(--corprincipal), var(--corcomplementarP));
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 3em;
+    font-family: var(--fontdestaque);
+    color: var(--corcomplementar2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
+}
+
+
+/* menu */
+
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    font-size: 1.5em;
+    font-family: var(--fontbase);
+    text-decoration: none;
+    padding: 10px;
+    color: var(--corcomplementar);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--corcomplementarP);
+    color: var(--corcomplementar2);
+}
+
+
+/* main */
+
+main {
+    font-family: var(--fontbase);
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    color: var(--corcomplementar);
+    margin: 10px 20px;
+    font-size: 1.7em;
+}
+
+main p {
+    padding: 20px;
+}
+
+main .row {
+    display: flex;
+    flex-direction: row;
+}
+
+main img {
+    max-width: 600px;
+    margin: 20px;
+    width: 100%;
+}
+
+main strong {
+    color: var(--corcomplementar2);
+}
+
+
+/* introdução */
+
+section#introducaoTipo {
+    max-width: 800px;
+    margin: 30px 90px;
+    text-align: center;
+}
+
+
+/* tipos */
+
+section#tiposMusicais {
+    max-width: 1200px;
+    margin: 50px 120px;
+    justify-content: center;
+}
+
+section#tiposMusicais p {
+    max-width: 700px;
+}
+
+section#tiposMusicais h3 {
+    font-size: 1.3em;
+    color: var(--corprincipal);
+    margin: 10px 20px;
+    margin-top: 40px;
+}
+
+section#tiposMusicais div {
+    margin: 20px;
+}
+
+
+/* footer */
+
+footer {
+    padding: 30px;
+    background-color: var(--corcomplementarP);
+    color: antiquewhite;
+    font-family: var(--fontbase);
+    font-size: 1.2em;
+}
+
+
+/* respónsividade */
+
+@media (max-width: 600px) {
+    section#introducaoTipo {
+        margin: 30px 40px;
+    }
+    section#tiposMusicais {
+        margin: 50px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    main .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
